@@ -223,7 +223,7 @@ class QuillController extends ChangeNotifier {
       final notInlineStyle = style.attributes.values.where((s) => !s.isInline);
       toggledStyle = style.removeAll(notInlineStyle.toSet());
     } else {
-      toggledStyle = Style();
+      // toggledStyle = Style();
     }
 
     if (textSelection != null) {
@@ -363,7 +363,7 @@ class QuillController extends ChangeNotifier {
     _selection = selection.copyWith(
         baseOffset: math.min(selection.baseOffset, end),
         extentOffset: math.min(selection.extentOffset, end));
-    toggledStyle = Style();
+    // toggledStyle = Style();
     onSelectionChanged?.call(textSelection);
   }
 
