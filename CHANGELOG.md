@@ -1,3 +1,18 @@
+# [6.3.1]
+* Add color property to the basic factory function.
+
+# [6.3.0]
+* Support Flutter 3.7.
+
+# [6.2.2]
+* Fix: nextLine getter null where no assertion.
+
+# [6.2.1]
+* Revert "Align numerical and bullet lists along with text content".
+
+# [6.2.0]
+* Align numerical and bullet lists along with text content.
+
 # [6.1.12]
 * Apply i18n for default font dropdown option labels corresponding to 'Clear'.
 
