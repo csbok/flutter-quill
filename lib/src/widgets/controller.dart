@@ -399,7 +399,7 @@ class QuillController extends ChangeNotifier {
       final notInlineStyle = style.attributes.values.where((s) => !s.isInline);
       toggledStyle = style.removeAll(notInlineStyle.toSet());
     } else {
-      toggledStyle = Style();
+      // toggledStyle = Style();
     }
     onSelectionChanged?.call(textSelection);
   }
