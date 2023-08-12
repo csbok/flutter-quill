@@ -1,3 +1,18 @@
+# [7.3.2]
+- Added builder for custom button in _LinkDialog.
+
+# [7.3.1]
+- Added case sensitive and whole word search parameters.
+- Added wrap around.
+- Moved search dialog to the bottom in order not to override the editor and the text found.
+- Other minor search dialog enhancements.
+
+# [7.3.0]
+- Add default attributes to basic factory.
+
+# [7.2.19]
+- Feat/link regexp.
+
 # [7.2.18]
 - Fix paste block text in words apply same style.
 
