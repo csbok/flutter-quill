@@ -1,3 +1,12 @@
+# [7.4.1]
+- Fix toolbar dividers condition.
+
+# [7.4.0]
+- Support Flutter version 3.13.0.
+
+# [7.3.3]
+- Updated Dependencies conflicting.
+
 # [7.3.2]
 - Added builder for custom button in _LinkDialog.
 

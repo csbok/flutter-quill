@@ -175,11 +175,11 @@ class QuillToolbar extends StatelessWidget implements PreferredSizeWidget {
           showBackgroundColorButton ||
           showClearFormat ||
           embedButtons?.isNotEmpty == true,
-      showAlignmentButtons || showDirection,
-      showLeftAlignment,
-      showCenterAlignment,
-      showRightAlignment,
-      showJustifyAlignment,
+      showLeftAlignment ||
+          showCenterAlignment ||
+          showRightAlignment ||
+          showJustifyAlignment ||
+          showDirection,
       showHeaderStyle,
       showListNumbers || showListBullets || showListCheck || showCodeBlock,
       showQuote || showIndent,
@@ -574,7 +574,7 @@ class QuillToolbar extends StatelessWidget implements PreferredSizeWidget {
           if (showDividers)
             QuillDivider(axis,
                 color: sectionDividerColor, space: sectionDividerSpace),
-        for (var customButton in customButtons)
+        for (final customButton in customButtons)
           if (customButton.child != null) ...[
             InkWell(
               onTap: customButton.onTap,
